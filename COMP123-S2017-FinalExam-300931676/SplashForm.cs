@@ -30,7 +30,9 @@ namespace COMP123_S2017_FinalExam_300931676
         /// <param name="e"></param>
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
-
+            Program.pickHighestCard.Show();
+            this.Hide();
+            SplashFormTimer.Enabled = false;
         }
     }
 }

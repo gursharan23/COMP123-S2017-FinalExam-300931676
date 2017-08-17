@@ -9,7 +9,7 @@ using System.Windows.Forms;
  * Date:17th August, 2017
  * StudentID: 300931676
  * Description: This is GUI for a game involving cards
- * Version: 0.1 Created the program class
+ * Version: 0.1 Added the splash form
  */
 
 namespace COMP123_S2017_FinalExam_300931676
@@ -26,7 +26,7 @@ namespace COMP123_S2017_FinalExam_300931676
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             pickHighestCard = new PickHighestCardForm();
-            Application.Run(new PickHighestCardForm());
+            Application.Run(new SplashForm());
         }
     }
 }
