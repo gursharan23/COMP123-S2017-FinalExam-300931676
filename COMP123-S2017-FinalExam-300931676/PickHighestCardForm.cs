@@ -15,7 +15,7 @@ using System.Windows.Forms;
  * Date:17th August, 2017
  * StudentID: 300931676
  * Description: This is GUI for a game involving cards
- * Version: 0.1 Refactored PickHighest Card class
+ * Version: 0.2 Refactored PickHighest Card class
  */
 
 namespace COMP123_S2017_FinalExam_300931676
@@ -238,7 +238,7 @@ namespace COMP123_S2017_FinalExam_300931676
         private void PickHighestCardForm_Load(object sender, EventArgs e)
         {
             // Initialize ScoreBoard HERE
-            ScoreBoard scoreboard = new ScoreBoard(ScoreTextBox,TimeTextBox,FinalScoreTextBox);
+            this.Scoreboard = new ScoreBoard(ScoreTextBox,TimeTextBox,FinalScoreTextBox);
             // Initialize the App Sounds
             this._buildDealtCardPictureBoxList();
             this._reset();

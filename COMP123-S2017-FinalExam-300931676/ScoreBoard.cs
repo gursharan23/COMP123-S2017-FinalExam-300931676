@@ -98,10 +98,14 @@ namespace COMP123_S2017_FinalExam_300931676
         }
         // Private Methods
         // Public Methods
+        /// <summary>
+        /// This is the update time method that updates the time
+        /// </summary>
         public void UpdateTime()
         {
-            this.Time = Convert.ToInt32(TimeTextBox.Text);
-            this.Time -= 1;
+            int time = Convert.ToInt32(TimeTextBox.Text);
+            time = time - 1;
+            this.Time = time;
             this.TimeTextBox.Text = this.Time.ToString();
         }
     }
