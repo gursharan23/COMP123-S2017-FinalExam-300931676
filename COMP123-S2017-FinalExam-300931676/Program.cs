@@ -5,17 +5,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name: Gursharan Singh
+ * Date:17th August, 2017
+ * StudentID: 300931676
+ * Description: This is GUI for a game involving cards
+ * Version: 0.1 Created the program class
  */
 
 namespace COMP123_S2017_FinalExam_300931676
 {
     public static class Program
     {
+        public static PickHighestCardForm pickHighestCard;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -24,6 +25,7 @@ namespace COMP123_S2017_FinalExam_300931676
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            pickHighestCard = new PickHighestCardForm();
             Application.Run(new PickHighestCardForm());
         }
     }
